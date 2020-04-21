@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="101dp"
+        android:layout_height="115dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        app:srcCompat="@drawable/profile"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="193dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:text="Anthony Okeleke"
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/mobiledeveloper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mobiledeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Mobile Developer"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/aboutme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/aboutme"
+        android:layout_width="313dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="I Live By My Own Rules. Driven to create, inspire and optimistic in Life."
+        android:textColor="#FFFF"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/lines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="20dp" />
+
+    <TextView
+        android:id="@+id/lines"
+        android:layout_width="313dp"
+        android:layout_height="20dp"
+        android:text="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="301dp"
+        android:layout_height="340dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/play_store"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/play_store" />
+
+        <ImageView
+            android:id="@+id/github"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/github" />
+
+        <ImageView
+            android:id="@+id/bitbucket"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/bitbucket" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/googleplus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/google_plus" />
+
+        <ImageView
+            android:id="@+id/youtube"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/youtube" />
+
+        <ImageView
+            android:id="@+id/dribbble"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/dribbble" />
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/whatsapp" />
+
+        <ImageView
+            android:id="@+id/skype"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/skype" />
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/google1" />
+
+        <ImageView
+            android:id="@+id/android"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/android" />
+
+        <ImageView
+            android:id="@+id/website"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:padding="20dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/website" />
+
+        <TextView
+            android:id="@+id/textplaystore"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Play Store"
+            android:scaleType="centerInside"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textgithub"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="GitHub"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textbitbucket"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Bitbucket"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textfacebook"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/facebook"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/texttwitter"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Twitter"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textinstagram"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Instagram"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textgoogleplus"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Google Plus"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textyoutube"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="YouTube"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textdribbble"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Dribbble"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textlinkedin"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="LinkedIn"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textemail"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="E-mail"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textwhatsapp"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Whatsapp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textskype"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Skype"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textgoogle"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Google"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textandroid"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Android"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textwebsite"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:text="Website"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+    </GridLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

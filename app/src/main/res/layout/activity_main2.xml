@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/enter_your_message"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"
+        android:autofillHints="Enter Username" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="@string/back" />
+
+</LinearLayout>
